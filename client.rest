@@ -1,0 +1,2 @@
+### Get Test
+GET http://127.0.0.1:8000/test/ HTTP/1.1
