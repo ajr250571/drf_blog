@@ -49,7 +49,9 @@ THIRD_PARTY_APPS = [
     'channels',
 ]
 
-PROJECT_APPS = []
+PROJECT_APPS = [
+    'apps.blog',
+]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + PROJECT_APPS
 
@@ -138,6 +140,9 @@ STATIC_LOCATIONS = [
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 # (Opcional) Almacenamiento mejorado para compresión y nombres únicos
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
